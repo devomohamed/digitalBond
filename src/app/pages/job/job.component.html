@@ -1,0 +1,123 @@
+<div class="my-job area py-5">
+  <div class="container">
+    <!-- top -->
+    <div class="top py-3">
+      <!-- Brand Icon -->
+    <!-- <a class="brand d-block text-center mb-2">
+      <img style="background-color: black;" src="../../../assets/images/logo.webp" alt="Digital Bond">
+    </a> -->
+    <!-- Brand Icon -->
+    <!-- position  -->
+    <h2>Frontend developer "Angular"</h2>
+    <!-- position -->
+    <p>Giza - Dokki</p>
+    </div>
+    <!-- top -->
+    <!-- bottom -->
+    <div class="bottom">
+      <form action="" [formGroup]="myForm">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+              <input formControlName="name" type="text" class="form-control" id="name" placeholder="Mohamed Sabry...">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Position</label>
+              <input formControlName="position" type="text" class="form-control" id="position" placeholder="Frontend Developer...">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Availability Date</label>
+              <input formControlName="availableDate" type="date" class="form-control" id="aviable-date">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Expected Salary</label>
+              <input formControlName="salary" min="5000" type="number" class="form-control" id="sallary" placeholder="6000 Example">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Date Of Birth</label>
+              <input formControlName="birthDay" type="date" class="form-control" id="birth-date">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Address</label>
+              <input formControlName="address" type="text" class="form-control" id="address" placeholder="Menufia - BerketElsabaa ...For Example">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+              <div class="row">
+                <div class="col-4">
+                  <select formControlName="codePhone" class="form-select" aria-label="Default select example">
+                    <option selected value="010">010</option>
+                    <option value="015">015</option>
+                    <option value="011">011</option>
+                    <option value="012">012</option>
+                  </select>
+                </div>
+                <div class="col-8"><input formControlName="phoneNumber" type="text" class="form-control" id="position" placeholder="12345678..." maxlength="8"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+              <input formControlName="email" type="email" class="form-control" id="email" placeholder="mohamed@example.com...">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Marital Status</label>
+                  <select formControlName="maritalStatus" class="form-select" aria-label="Default select example">
+                    <option selected value="married">Married</option>
+                    <option value="got engaged">Got Engaged</option>
+                    <option value="single">Single</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Attach File</label>
+                  <input formControlName="file" type="file" class="form-control" id="file">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="mb-3">
+              <button (click)="submitForm()" [disabled]="myForm.invalid" class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- bottom -->
+
+
+  </div>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
+

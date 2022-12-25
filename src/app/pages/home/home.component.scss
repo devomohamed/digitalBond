@@ -1,0 +1,32 @@
+.home{
+  .banner{
+    img{
+
+    }
+    .link{
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%);
+      a{
+        padding: 10px 20px;
+        background: black;
+        transition: .3s;
+        color: white;
+        &:hover{
+          background-color: #3c3c3c;
+        }
+      }
+    }
+  }
+  .job-envirument{
+
+  }
+  .team-work{
+
+  }
+}
+
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}

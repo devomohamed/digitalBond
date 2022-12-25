@@ -1,0 +1,78 @@
+<!-- start Header -->
+<header class="position-sticky">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center left-nav">
+        <!-- Brand Icon -->
+        <a routerLink="/" class="brand">
+          <img src="../../../assets/images/logo.webp" alt="">
+        </a>
+        <!-- Brand Icon -->
+        <!-- Links -->
+        <ul class="links d-flex m-0">
+          <li class="px-3">
+            <a routerLink="/" class="text-decoration-none text-uppercase">Home</a>
+          </li>
+          <li class="px-3">
+            <a routerLink="/" class="text-decoration-none text-uppercase">About</a>
+          </li>
+          <li class="px-3">
+            <a routerLink="/" class="text-decoration-none text-uppercase">Services</a>
+          </li>
+          <li class="px-3">
+            <a routerLink="/" class="text-decoration-none text-uppercase">Careers</a>
+          </li>
+          <li class="px-3">
+            <a routerLink="/" class="text-decoration-none">Say Hello</a>
+          </li>
+        </ul>
+        <!-- Links -->
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons d-flex flex-wrap">
+        <a  class="m-1 rounded-circle d-flex justify-content-center align-items-center" href=""><fa-icon [icon]="faInstagram" ></fa-icon></a>
+        <a  class="m-1 rounded-circle d-flex justify-content-center align-items-center" href=""><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a  class="m-1 rounded-circle d-flex justify-content-center align-items-center" href=""><fa-icon [icon]="faLinkedin"></fa-icon></a>
+        <a  class="m-1 rounded-circle d-flex justify-content-center align-items-center" href=""><fa-icon [icon]="faWhatsapp"></fa-icon></a>
+        <a  class="m-1 rounded-circle d-flex justify-content-center align-items-center" href=""><fa-icon [icon]="faTiktok"></fa-icon></a>
+      </div>
+      <!-- Social Icons -->
+      <!-- Menu Icon -->
+      <div class="menu-icon d-lg-none d-xl-none d-xxl-none">
+        <button class="" (click)="menuOpened = true"><fa-icon [icon]="faBars"></fa-icon></button>
+      </div>
+      <!-- Menu Icon -->
+    </div>
+  </div>
+</header>
+<!-- start Header -->
+
+<div [class.active]="menuOpened" class="menu">
+  <div class="inner-sidenav p-5 position-relative">
+    <button (click)="menuOpened = false" class="position-absolute"><fa-icon [icon]="faXmark"></fa-icon></button>
+    <nav class="text-center">
+      <a href="" class="brangd">
+        <img src="../../../assets/images/logo.webp" alt="">
+      </a>
+      <!-- Links -->
+      <ul class="links m-0">
+        <li class="px-3">
+          <a (click)="menuOpened = false" routerLink="/" class="text-decoration-none text-uppercase">Home</a>
+        </li>
+        <li class="px-3">
+          <a (click)="menuOpened = false" routerLink="/" class="text-decoration-none text-uppercase">About</a>
+        </li>
+        <li class="px-3">
+          <a (click)="menuOpened = false" routerLink="/" class="text-decoration-none text-uppercase">Services</a>
+        </li>
+        <li class="px-3">
+          <a (click)="menuOpened = false" routerLink="/" class="text-decoration-none text-uppercase">Careers</a>
+        </li>
+        <li class="px-3">
+          <a (click)="menuOpened = false" routerLink="/" class="text-decoration-none">Say Hello</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </nav>
+  </div>
+</div>

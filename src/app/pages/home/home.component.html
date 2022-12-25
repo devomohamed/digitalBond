@@ -1,0 +1,29 @@
+<div class="home">
+  <div class="banner position-relative">
+    <img style="max-height: 100vh;" class="w-100" src="../../../assets/images/pexels-andrea-piacquadio-927451.jpg" alt="">
+    <div class="link position-absolute">
+      <a class="text-decoration-none rounded" routerLink="job">Apply To Job</a>
+    </div>
+  </div>
+  <div class="job-envirument py-3 mt-2 container">
+    <h2 class="title text-center fw-bold mb-2">Job Environment</h2>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 p-3">
+        <img class="w-100" src="../../../assets/images/pexels-fauxels-3184465.jpg" alt="">
+      </div>
+      <div class="col-lg-6 col-md-12 p-3">
+        <p>Your work environment is made up of all of the elements that can affect your day-to-day productivity, including when, where and how you work. During your career development, you can pursue opportunities that provide a comfortable work environment that promotes your success and aligns with your core values.</p>
+        <h3>Company culture</h3>
+        <p>This element refers to the way a company and its employees operate, including what effective communication looks like between different levels of staff, employees’ perspective of company leaders, the company’s goals and what the organization values.</p>
+      </div>
+    </div>
+  </div>
+  <div class="team-work py-3 mt-2">
+    <h2 class="title text-center fw-bold mb-2">Team Work</h2>
+    <swiper [config]="config">
+      <ng-template  *ngFor="let imageNumber of [1,2,3,4,5,6,7,8,9]" class="category pt-3" swiperSlide>
+          <img style="height: 200px;" class="w-100" src="../../../assets/images/person/{{imageNumber}}.jpg" alt="">
+      </ng-template>
+    </swiper>
+  </div>
+</div>
